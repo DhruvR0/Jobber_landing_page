@@ -1,0 +1,596 @@
+.hero {
+    display: flex;
+    background-color: #e6f0f9;
+    overflow: hidden;
+    position: relative;
+    padding-top: 60px;
+
+    .left-container {
+        padding: 5rem 9rem 13rem;
+        display: flex;
+        width: 85vh;
+        height: 35rem;
+        flex-direction: column;
+        gap: 1rem;
+
+        .title {
+            font-size: 4.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            font-weight: 800;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+        }
+
+        .search {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem 2rem;
+            background-color: white;
+            border-radius: 30px;
+            width: auto;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                width: 50%;
+                font-size: 1.1rem;
+                text-decoration: none;
+                border: none;
+                border-right: 1px solid black;
+            }
+
+            button {
+                width: auto;
+                font-size: 1.2rem;
+                background-color: black;
+                color: white;
+                padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+                border-radius: 20px;
+            }
+        }
+
+        .popular-searches {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            
+            gap: 1rem;
+
+            .title {
+                font-size: 20px;
+            }
+
+            .search {
+                padding-top: 20px;
+                display: flex;
+                gap: 1rem;
+                font-size: 1rem;
+                flex-wrap: wrap;
+                border: none;
+                background-color: #e6f0f9;
+                color: #0969c3;
+
+                span {
+                    border-radius: 20px;
+                    padding: 0.1rem 0.5rem;
+                    background-color: rgba(9, 105, 195, 0.05);
+                }
+            }
+        }
+        .company-icons {
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-between;
+            .logos {
+                
+                img {
+                    width: 90px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .right-container {
+        margin-bottom: 2rem;
+        position: relative;
+        z-index: 2;
+
+        .Top-image {
+            width: 24rem;
+            height: 30rem;
+            border-radius: 20px;
+            top: 5rem;
+            right: -9rem;
+            z-index: 3;
+            border: none;
+
+            transform: translate(-3%, 0%);
+            position: relative;
+
+            .hero-bg {
+                width: 100%;
+                height: 100%;
+                z-index: 4;
+                border-radius: 20px;
+                object-fit: cover;
+            }
+
+            .job-offers {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                position: absolute;
+                z-index: 5;
+                top: 40%;
+                left: 10%;
+                transform: translate(120%, 0%);
+                width: 12rem;
+                height: 10rem;
+                padding: 0.5rem;
+                background-color: white;
+                border-radius: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+                .job {
+                    display: flex;
+                    padding-left: 1rem;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .job-content {
+                        display: flex;
+                        gap: 0.5rem;
+                        justify-content: center;
+                        align-items: end;
+                    }
+
+                    .job-number {
+                        font-size: 1.5rem;
+                        font-weight: bold !important;
+                    }
+
+                    .job-text {
+                        font-size: 0.9rem;
+                        font-weight: bold !important;
+                    }
+
+                    .job-detail {
+                        font-size: 0.7rem;
+                        color: gray;
+                        margin-top: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .middle-image {
+            position: absolute;
+            background-color: #0d6efd;
+            width: 24rem;
+            height: 30.5rem;
+            border-radius: 15px;
+            top: 6.4rem;
+            right: -10.3rem;
+            z-index: -1;
+            transform: rotate(7.5deg);
+            border: none;
+        }
+
+        .last-image {
+            position: absolute;
+            background-color: #fff;
+            width: 24rem;
+            height: 31.5rem;
+            border-radius: 15px;
+            z-index: -2;
+            transform: rotate(13.5deg);
+            top: 7.2rem;
+            left: 12rem;
+            border: none;
+        }
+    }
+
+    .box {
+        position: absolute;
+        top: -3rem;
+        right: -33rem;
+        transform: rotate(-50deg);
+        width: 70rem;
+        height: 70rem;
+        border-radius: 12rem;
+        background-color: black !important;
+        z-index: 1;
+    }
+}
+
+.search-by-category {
+    margin-top: 20px;
+    padding: 100px;
+    background-color: white;
+
+    .category-title {
+        padding-bottom: 35px;
+        line-height: 14px;
+        margin-left: 21px;
+
+        .title {
+            font-size: 40px;
+            font-weight: 800;
+        }
+
+        .para {
+            font-size: 0.6rem;
+        }
+    }
+
+    .cards-container {
+        margin-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .card-first,
+        .card {
+            width: 230px;
+            height: 240px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #e6f0f9;
+
+            .symbol {
+                text-align: center;
+                color: #0969c3;
+                background-color: #fff;
+                border-radius: 30px;
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+                padding: 30px;
+                display: inline-block;
+                font-size: 42px;
+                line-height: 42px;
+            }
+
+            .card-content {
+                text-align: center;
+                margin-top: 30px;
+                font-weight: 500;
+                font-size: 18px;
+            }
+
+            .card-position {
+                text-align: center;
+                font-size: 9px;
+                margin-bottom: 15px;
+                margin-top: 30px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.featured-job-offers {
+    padding: 100px;
+    background-color: #fff0d9;
+    
+
+    .job-offer-title {
+        padding-bottom: 35px;
+        line-height: 10px;
+        padding-top: 20px;
+
+        .title {
+            font-size: 40px;
+            font-weight: 800;
+        }
+
+        .para {
+            font-size: 10px;
+        }
+    }
+
+    .card-container {
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .cards {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 0.2px 0px 0px;
+            padding: 1rem;
+            flex: 1 1 calc(25% - 2rem);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+
+            .icon-category {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-weight: bold;
+            }
+
+            .title {
+                line-height: 3.5rem;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                font-weight: 600;
+                display: block;
+                font-size: 18px;
+                margin-top: 30px;
+            }
+
+            .location-type-icon3 {
+                font-size: 0.9rem;
+                color: #555;
+                display: flex;
+                gap: 1rem;
+
+                .location-icon3 {
+                    display: flex;
+                    gap: 0.4rem;
+                    align-items: center;
+
+                    .location {
+                        font-weight: 550;
+                        font-size: 12px;
+                    }
+
+                    .icon3 {
+                        font-size: 12px;
+                    }
+                }
+
+                .type {
+                    font-size: 12px;
+                }
+            }
+
+            .date-company-icon2 {
+                padding-top: 2rem;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+                align-items: center;
+
+                .date-company {
+                    font-size: 0.8rem;
+                    color: #888;
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 22px;
+
+                    .company {
+                        font-weight: 550;
+                    }
+                }
+
+                .image {
+                    display: flex;
+                    justify-content: end;
+
+                    img {
+                        width: 35%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.find-best-company {
+    padding: 80px;
+ 
+
+    .title-para {
+        line-height: 35px;
+
+        .title {
+            padding-left: 40px;
+            font-size: 40px;
+            font-weight: 650;
+        }
+
+        .para {
+            padding-left: 40px;
+            font-size: 15px;
+        }
+    }
+
+    .card-containers {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-left: 35px;
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 1rem;
+            width: 350px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid lightgray;
+
+            .images {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+                margin-bottom: 1rem;
+                padding-left: 10px;
+
+                img {
+                    width: 35%;
+                    height: auto;
+                    border-radius: 10px;
+                }
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                padding-left: 10;
+                padding-right: 20px;
+
+                .company {
+                    margin-top: 9px;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    margin-bottom: 0.5rem;
+                }
+
+                .company-info {
+                    font-size: 1rem;
+                    color: #888;
+                    margin-bottom: 0.5rem;
+                }
+
+                .jobs {
+                    font-size: 0.9rem;
+                    color: #555;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+.featured-cities {
+    .featured-cities-title {
+        padding: 20px 110px;
+        
+        line-height: 12px;
+
+        .title {
+            font-size: 37px;
+            font-weight: 650;
+        }
+
+        .para {
+            font-size: 15px;
+        }
+    }
+
+    .cards-contain {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 20px 100px;
+
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0px 0.2px 0px 0px;
+            padding: 1rem;
+            flex: 1 1 calc(25% - 2rem);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff0d9;
+
+            .images {
+                width: 100%;
+                height: 100%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                object-fit: cover;
+
+                img {
+                    width: 100%;
+                    height: 170px;
+                    border-radius: 20px;
+                }
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                line-height: 40px;
+
+                .city {
+                    margin-top: 12px;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+
+                .position {
+                    font-size: 13px;
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+}
+
+.up-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+
+    .update-title {
+        margin-bottom: 1rem;
+
+        .heading {
+            font-size: 35px;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .note {
+            font-size: 15px;
+        }
+    }
+
+    .picture {
+        width: 35%;
+        height: 50%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .enter-email-subscribe {
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        margin: 0 auto;
+        padding: 2px;
+        border: 1px solid lightgray;
+
+        .email {
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #0969c3;
+            border: none;
+            font-size: 25px;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            padding-left: 15px;
+        }
+    }
+}
